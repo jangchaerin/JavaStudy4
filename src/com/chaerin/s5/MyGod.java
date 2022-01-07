@@ -1,17 +1,19 @@
 package com.chaerin.s5;
 
 public class MyGod {
-	private static MyGod mygod;
-	private MyGod() {
 	
-	}
+	private static MyGod myGod;
 	
-	public static MyGod makeGod() { //멤버메소드
+	private MyGod() {}
+	
+	
+	public static MyGod makeGod() {
 		
-//		this.myGod        //this 못쓴다 static메소드는 메인 전에 만들어진다.
+		if(MyGod.myGod == null) {
+			MyGod.myGod = new MyGod();
+		}
 		
-		return new MyGod();
-		
+		return MyGod.myGod;
 	}
 
 }

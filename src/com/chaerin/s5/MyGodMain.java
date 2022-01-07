@@ -10,13 +10,11 @@ public class MyGodMain {
 		
 		MyGod mygod = MyGod.makeGod();
 		System.out.println(mygod);
-		MyGod mygod1 = MyGod.makeGod();
-		System.out.println(mygod1);
 		
-		
-		
-		
-		
+		MyGod my2 = MyGod.makeGod();
+		System.out.println(my2);
+		System.out.println(MyGod.makeGod());
+
 	}
 
 }
