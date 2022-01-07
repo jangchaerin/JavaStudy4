@@ -7,6 +7,6 @@ public interface Act {
 	//추상메소드
 	public abstract void attack();
 	
-	
+	void move();
 
 } 
